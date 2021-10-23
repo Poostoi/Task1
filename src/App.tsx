@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ManyText } from "./ManyText"
+import { Text } from "./Text"
+import { Table } from "./Table"
+export const App = () => {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<div className="center col-lg-12">
+				<h1 className="text-center">
+					ПОРТФОЛИО
+				</h1>
+
+			</div>
+			<div className="center row col-lg-12">
+				<div className="col-lg-3 ">
+					<Table value="Нюша" amountBox={5} amountRow={20} />
+				</div>
+				<div className="col-lg-7">
+					<img src="http://earthporm.com/wp-content/uploads/2015/06/pallas-cat-manul-20__880.jpg" alt="cat" />
+				</div>
+				<div className="col-lg-3">
+					<Table value="Нюша" amountBox={5} amountRow={20} />
+				</div>
+			</div >
+			<div className="center col-lg-12 row">
+				<Table value="Нюша" amountBox={23} amountRow={1000} />
+			</div>
+		</>
+	)
 }
-
-export default App;
